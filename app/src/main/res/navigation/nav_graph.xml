@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.equity.ViewModel.Home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_WithdrawFragment"
+            app:destination="@id/WithdrawFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_DepositFragment"
+            app:destination="@id/DepositFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/WithdrawFragment"
+        android:name="com.example.equity.ViewModel.Withdraw.WithdrawFragment"
+        android:label="@string/withdraw"
+        tools:layout="@layout/fragment_withdraw">
+
+        <action
+            android:id="@+id/action_WithdrawFragment_to_WithdrawConfirmFragment"
+            app:destination="@id/WithdrawConfirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/DepositFragment"
+        android:name="com.example.equity.ViewModel.Deposit.DepositFragment"
+        android:label="@string/deposit"
+        tools:layout="@layout/fragment_deposit">
+
+        <action
+            android:id="@+id/action_DepositFragment_to_DepositConfirmFragment"
+            app:destination="@id/DepositConfirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/DepositConfirmFragment"
+        android:name="com.example.equity.ViewModel.Deposit.DepositConfirmFragment"
+        android:label="@string/depositDetails"
+        tools:layout="@layout/fragment_deposit_confirm">
+        <action
+            android:id="@+id/action_DepositConfirmFragment_to_DepositQrcodeFragment"
+            app:destination="@id/DepositQrcodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/DepositQrcodeFragment"
+        android:name="com.example.equity.ViewModel.Deposit.DepositQrcodeFragment"
+        android:label="@string/depositQrcode"
+        tools:layout="@layout/fragment_deposit_qrcode">
+            <action
+                android:id="@+id/action_DepositQrcodeFragment_to_HomeFragment"
+                app:destination="@id/HomeFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/WithdrawConfirmFragment"
+        android:name="com.example.equity.ViewModel.Withdraw.WithdrawConfirmFragment"
+        android:label="@string/withdrawDetails"
+        tools:layout="@layout/fragment_withdraw_confirm">
+        <action
+            android:id="@+id/action_WithdrawConfirmFragment_to_WithdrawQrcodeFragment"
+            app:destination="@id/WithdrawQrcodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/WithdrawQrcodeFragment"
+        android:name="com.example.equity.ViewModel.Withdraw.WithdrawQrcodeFragment"
+        android:label="@string/withdrawQrcode"
+        tools:layout="@layout/fragment_withdraw_qrcode">
+        <action
+            android:id="@+id/action_WithdrawQrcodeFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search"
+        android:name="com.example.equity.ViewModel.Home.SearchFragment">
+        <action app:destination="@id/HomeFragment"
+            android:id="@+id/action_SearchFragment_to_HomeFragment"/>
+    </fragment>
+</navigation>

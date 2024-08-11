@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewModel.Home.SearchFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/account"
+        android:layout_width ="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter account number"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Continue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/colorPrimary"
+        android:padding="10dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="400dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <!-- TextView for loading message -->
+    <TextView
+        android:id="@+id/loadingTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Loading, please wait..."
+        android:visibility="gone"
+    android:layout_marginTop="16dp" />
+
+
+    <TextView
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="32dp" />
+
+
+</LinearLayout>

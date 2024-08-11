@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Equity</string>
+    <string name="Welcome">Welcome to Equity</string>
+    <string name="home_fragment_label">home fragment label</string>
+    <string name="withdraw_fragment_label">withdraw fragment label\n</string>
+    <string name="deposit_fragment_label">deposit fragment label\n</string>
+    <string name="Cancel">Cancel\n</string>
+    <string name="accdes">Confirm Deposit Details\n</string>
+    <string name="Continue">Continue\n</string>
+    <string name="withdrawAmt">Amount</string>
+    <string name="home">home</string>
+    <string name="depositQrcode">Deposit QrCode</string>
+    <string name="withdrawQrcode">Withdraw QrCode</string>
+    <string name="withdrawDetails">Confirm Withdraw Details</string>
+    <string name="deposit">Confirm deposit details</string>
+    <string name="withdraw">Confirm withdraw details</string>
+    <string name="depositDetails">Confirm Deposit Details\n</string>
+    <string name="Account">Account</string>
+</resources>

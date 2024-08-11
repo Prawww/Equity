@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewModel.Deposit.DepositConfirmFragment">
+
+
+    <TextView
+        android:id="@+id/txtAccDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="@color/equity"
+        android:text ="Account"/>
+    <TextView
+        android:id="@+id/txtAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/amtDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="@color/equity"
+        android:text = "Amount"/>
+
+    <TextView
+        android:id="@+id/txtAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/txtCurrency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/equity"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:text="Currency"/>
+
+    <TextView
+        android:id="@+id/currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/depDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/equity"
+        android:text ="Depositer" />
+
+    <TextView
+        android:id="@+id/dep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/depIdDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/equity"
+        android:text ="Depositer ID" />
+
+    <TextView
+        android:id="@+id/depId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/depNoDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/equity"
+        android:text ="Depositer Number" />
+
+    <TextView
+        android:id="@+id/depNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+
+
+
+    <Button
+        android:id="@+id/downloadQr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/white"
+        android:text="QR CODE"/>
+
+    <Button
+        android:id="@+id/Cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/white"
+        android:text="@string/Cancel"/>
+
+
+
+
+
+
+
+</LinearLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:orientation="vertical"-->
+    <!--    android:padding="20dp"-->
+    <!--    android:gravity="center">-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/name"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textSize="24sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:padding="10dp"-->
+    <!--        android:text="@string/welcome" />-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        android:padding="10dp">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:layout_marginEnd="5dp"-->
+    <!--            android:background="@drawable/button_background_rounded">-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/fullName"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textColor="@android:color/black"-->
+    <!--                android:text="Full Name" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/email"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textColor="@android:color/black"-->
+    <!--                android:text="Email" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/nationalId"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textColor="@android:color/black"-->
+    <!--                android:text="National ID" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/phone"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textColor="@android:color/black"-->
+    <!--                android:text="Phone Number" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="0dp"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:layout_marginStart="5dp"-->
+    <!--            android:background="@drawable/button_background_rounded">-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/withdraw"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textStyle="bold"-->
+    <!--                android:text="Withdraw"-->
+    <!--                android:drawableStart="@drawable/ic_withdraw"-->
+    <!--                android:backgroundTint="@color/withdraw_button_color"-->
+    <!--                android:textColor="@android:color/white"-->
+    <!--                android:paddingStart="32dp"-->
+    <!--                android:paddingEnd="32dp"-->
+    <!--                android:paddingTop="12dp"-->
+    <!--                android:paddingBottom="12dp"-->
+    <!--                android:layout_marginBottom="8dp"/>-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/deposit"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textStyle="bold"-->
+    <!--                android:text="Deposit"-->
+    <!--                android:drawableStart="@drawable/ic_deposit"-->
+    <!--                android:backgroundTint="@color/deposit_button_color"-->
+    <!--                android:textColor="@android:color/white"-->
+    <!--                android:paddingStart="32dp"-->
+    <!--                android:paddingEnd="32dp"-->
+    <!--                android:paddingTop="12dp"-->
+    <!--                android:paddingBottom="12dp"-->
+    <!--                android:layout_marginTop="8dp"/>-->
+
+    <!--        </LinearLayout>-->
+
+    <!--    </LinearLayout>-->
+
+    <!--</LinearLayout>-->
